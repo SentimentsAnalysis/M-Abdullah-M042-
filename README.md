@@ -14,8 +14,9 @@ After collecting dataset, I created a python file to perform analysis on data be
  1. In first step, i converted text into lower case by using lower() function. I did this because I have to match this text data with the data in emotion.txt file which     is in lower case.
  2. After this I removed links from my data using re library. for this, I defined a pattern. When the pattern is matched in the data, i will remove that url from the         text.
  3. In 3rd step, I Removed Punctuation from the text. For this, I imported string library because I have to apply for loop & have to check every single word.
- 4. In 4th step, I imported word_tokenize from nltk library for dividing text into separate words for analysis.
- 5. In 5th step, I removed stopwords from text. Stopwords are those words which gives no emotion like he, she, is, are, there, them etc. For this, i imported stopwords       function from nltk library for removing them from text.
- 6. In 6th step, I imported Emotion.txt file and made some changes in the format of the file to make it easily compareable with the text & find the emotion list from the     text.
- 6. After this, i simply count the total number of emotions exist in the data. For this, I imported Counter Library for counting the emotions in the data.
- 7. At the end of the Analysis, i make the graph of the emotion. For making the graph, I imported a library which is matplotlib which is used for making graphs in python.
+ 4. In 4th step, I removed numerical values from the text using if condition.
+ 5. In 5th step, I imported word_tokenize from nltk library for dividing text into separate words for analysis.
+ 6. In 6th step, I removed stopwords from text. Stopwords are those words which gives no emotion like he, she, is, are, there, them etc. For this, i imported stopwords       function from nltk library for removing them from text.
+ 7. In 7th step, I imported Emotion.txt file and made some changes in the format of the file to make it easily compareable with the text & find the emotion list from the     text.
+ 8. After this, i simply count the total number of emotions exist in the data. For this, I imported Counter Library for counting the emotions in the data.
+ 9. At the end of the Analysis, i make the graph of the emotion. For making the graph, I imported a library which is matplotlib which is used for making graphs in           python.
