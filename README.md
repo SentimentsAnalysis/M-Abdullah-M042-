@@ -9,9 +9,7 @@ Project has 2 phases. In first phase, i extracted data & in second phase, i perf
 5. After this, an Excel file is created for saving that data data.
 
 Sentiment Analysis:
-7. After collecting dataset, we perform analysis on data in different ways.
-I perform analysis in certain steps:
- 1. Extracting tweets.
+After collecting dataset, I perform analysis on data in following steps.
  2. Converting text into lowercase
  3. Removing links
  4. Removing hastags
