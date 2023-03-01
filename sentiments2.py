@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from nltk.corpus import stopwords
 
 #Importing extracted data for analysis
-text = open('tweet.csv', encoding='utf=8').read()
+text = open('ExtractedData.csv', encoding='utf=8').read()
 
 #Converting uppercase latters into lowercase for analysis.
 lower_case = text.lower()
@@ -14,18 +14,23 @@ lower_case = text.lower()
 import re
 pattern = "http\S+"
 new_text = re.sub(pattern, "", lower_case)
-
-#removing Hashtags
-pattern = "http\S+"
-cleaned_text = re.sub(pattern, "", new_text)
-cleaned_text
+print(new_text)
 
 #Removing Punctuations
 clean_text = ""
-for i in cleaned_text:
-    if i.isalnum():
+for i in new_text:
+    if i.isalnum() or i.isspace():
         clean_text+=i
 print(clean_text)
+
+#Removing Numerical values
+clean_num = ""
+for i in clean_text:
+  if i>='0' and i<='9':
+    continue
+  else:
+    clean_num=clean_num+i
+clean_num
 
 #Separating data for analysis
 tokenized_words = word_tokenize(cleaned_text)
