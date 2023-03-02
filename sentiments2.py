@@ -16,6 +16,12 @@ pattern = "http\S+"
 new_text = re.sub(pattern, "", lower_case)
 print(new_text)
 
+#removing Hashtage from data
+import re
+pattern = "#\S+ || @\S+"
+new_text = re.sub(pattern, "", new_text)
+print(new_text)
+
 #Removing Punctuations
 clean_text = ""
 for i in new_text:
